@@ -32,6 +32,21 @@ package com.bridgelab;
 	            max = f3;
 	        return max;
 	    }
+	    /**
+	     * Method to compare three strings and get the maximum value.
+	     * s1 : First value to compare.
+	     * s2 : Second value to compare.
+	     * s3 : Third value to compare.
+	     * return max : Maximum of three strings
+	     */
+	    public static String maxOfString(String s1, String s2, String s3) {
+	        String max = s1;
+	        if (s2.compareTo(max) > 0)
+	            max = s2;
+	        if (s3.compareTo(max) > 0)
+	            max = s3;
+	        return max;
+	    }
 
 	    public static void main(String[] args) {
 	        System.out.println("Welcome to the program to find maximum value ");
@@ -39,5 +54,7 @@ package com.bridgelab;
 	        System.out.println("The Maximum between three integers is : " + maxOfInteger(a1, a2, a3));
 	        Float f1 = 3.5f, f2 = 9.4f, f3 = 7.1f;
 	        System.out.println("The Maximum between three float is : " + maxOfFloat(f1, f2, f3));
+	        String s1 = "abc", s2 = "pqr", s3 = "xyz";
+	        System.out.println("The Maximum between three String is : " + maxOfString(s1, s2, s3));
 	    }
 	}
